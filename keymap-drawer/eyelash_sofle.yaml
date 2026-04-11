@@ -330,10 +330,10 @@ combos:
   k: '&soft_off'
 - p: [41, 42]
   k: Ctl+C
-- p: [41, 42]
-  k: Ctl+X
-- p: [41, 43]
+- p: [42, 43]
   k: Ctl+V
+- p: [41, 43]
+  k: Ctl+X
 - p: [40, 42]
   k: Ctl+Z
 - p: [22, 23]
