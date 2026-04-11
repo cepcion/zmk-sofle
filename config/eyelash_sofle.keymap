@@ -149,9 +149,9 @@
             bindings = <
 &gresc     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp MINUS
 &kp TAB     &mt LGUI Q &kp W   &kp F     &kp P   &kp G        &kp DOWN_ARROW   &kp J      &kp L      &kp U      &kp Y             &kp SEMI       &kp BSLH
-&kp BSLH    &kp A      &mt LALT R   &mt LCTRL S     &mt LSHIFT T    &kp D        &kp LEFT_ARROW   &kp H      &mt RSHIFT N      &mt RCTRL E     &mt RALT I            &kp O    &kp APOS
+&kp BSLH    &kp A      &kp R   &kp S     &kp  T    &kp D        &kp LEFT_ARROW   &kp H      &kp  N      &kp  E     &kp  I            &kp O    &kp APOS
 &mt LSHIFT KP_LPAR   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp K      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &mt RSHIFT KP_RPAR
-&kp C_MUTE  &kp LCTRL  &tog COLEMAK  &kp LEFT_ALT  &mo ACTION   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo BT      &kp RIGHT_SHIFT  &kp BACKSPACE
+&kp C_MUTE  &kp LCTRL  &tog COLEMAK  &kp LEFT_ALT  &mo ACTION   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER      &kp RGUI &mo BT   &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
