@@ -50,25 +50,25 @@
 
         cmb_copy {
             bindings = <&kp LC(C)>;
-            key-positions = <41 42>
+            key-positions = <41 42>;
         };
 
         cmb_cut {
             bindings = <&kp LC(V)>;
-            key-positions = <42 43>
+            key-positions = <42 43>;
         };
         cmb_paste {
             bindings = <&kp LC(X)>;
-            key-positions = <41 42>
+            key-positions = <41 42>;
         };
         cmb_undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <40 42>
+            key-positions = <40 42>;
         };
 
         cmb_delete {
             bindings = <&kp DEL>;
-            key-positions = <22 23>
+            key-positions = <22 23>;
         };        
     }
 
