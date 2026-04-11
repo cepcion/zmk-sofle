@@ -25,7 +25,7 @@ layers:
   - U
   - I
   - O
-  - P
+  - {t: P, h: RGUI}
   - {t: \, s: '|'}
   - {t: \, s: '|'}
   - A
