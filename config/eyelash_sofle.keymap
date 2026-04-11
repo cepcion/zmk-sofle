@@ -2,6 +2,7 @@
 #define COLEMAK 1
 #define ACTION 2
 #define BT 3
+#define FUNC 4
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
@@ -87,7 +88,12 @@
         cmb_delete {
             bindings = <&kp DELETE>;
             key-positions = <22 23>;
-        };        
+        };    
+
+        cmb_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <21 22>;
+        };       
     };
 
     macros {
@@ -132,7 +138,7 @@
 &kp TAB     &hm_l LGUI Q &kp W   &kp E     &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O             &hm_r RGUI P       &kp BSLH
 &kp BSLH    &kp A      &hm_l LALT S   &hm_l LCTRL D     &hm_shift_l LSHIFT F    &kp G        &kp LEFT_ARROW   &kp H      &hm_shift_r RSHIFT J      &hm_r RCTRL K     &hm_r RALT L            &kp SEMI    &kp APOS
 &mt LSHIFT LEFT_PARENTHESIS   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &mt RSHIFT RIGHT_PARENTHESIS
-&kp C_MUTE  &kp LCTRL  &tog COLEMAK  &kp TAB  &mo ACTION   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo BT      &kp RGUI  &kp BACKSPACE
+&kp C_MUTE  &kp LCTRL  &tog COLEMAK  &kp TAB  &mo ACTION   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo FUNC      &mo BT  &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -155,9 +161,9 @@
         layer_actions {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
+&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp EQUAL        &kp LEFT_BRACKET          &kp RIGHT_BRACKET      &kp LEFT_BRACE   &kp RIGHT_BRACE         &kp EQUAL
+&trans      &kp TILDE        &rgb_ug RGB_BRI   &rgb_ug RGB_BRD          &trans           &mkp MB5   &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp UP     &kp DOWN  &kp RIGHT  &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp HOME  &kp PG_UP  &kp PG_DN    &kp END           &trans
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
@@ -178,13 +184,13 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        layer_functions {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "layer3";
