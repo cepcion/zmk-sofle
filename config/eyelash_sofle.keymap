@@ -54,12 +54,12 @@
         };
 
         cmb_paste {
-            bindings = <&kp LC(X)>;
-            key-positions = <41 42>;
+            bindings = <&kp LC(V)>;
+            key-positions = <42 43>;
         };
 
         cmb_cut {
-            bindings = <&kp LC(V)>;
+            bindings = <&kp LC(X)>;
             key-positions = <41 43>;
         };
 
