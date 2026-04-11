@@ -25,7 +25,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: RGUI}
+  - P
   - {t: \, s: '|'}
   - {t: \, s: '|'}
   - A
@@ -56,14 +56,14 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - {t: COLEMAK, h: toggle}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-tab$$
   - layer1
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - layer2
-  - $$mdi:apple-keyboard-shift$$
+  - RGUI
   - {t: '$$mdi:backspace$$', type: backspace}
   COLEMAK:
   - {t: '$$mdi:keyboard-esc$$', s: '`'}
@@ -90,7 +90,7 @@ layers:
   - L
   - U
   - Y
-  - {t: ;, h: RGUI, s: ':'}
+  - {t: ;, s: ':'}
   - {t: \, s: '|'}
   - {t: \, s: '|'}
   - A
