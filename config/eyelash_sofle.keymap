@@ -53,21 +53,23 @@
             key-positions = <41 42>;
         };
 
-        cmb_cut {
-            bindings = <&kp LC(V)>;
-            key-positions = <42 43>;
-        };
         cmb_paste {
             bindings = <&kp LC(X)>;
             key-positions = <41 42>;
         };
+
+        cmb_cut {
+            bindings = <&kp LC(V)>;
+            key-positions = <41 43>;
+        };
+
         cmb_undo {
             bindings = <&kp LC(Z)>;
             key-positions = <40 42>;
         };
 
         cmb_delete {
-            bindings = <&kp DEL>;
+            bindings = <&kp DELETE>;
             key-positions = <22 23>;
         };        
     };
