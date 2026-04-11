@@ -94,15 +94,15 @@ layers:
   - {t: \, s: '|'}
   - {t: \, s: '|'}
   - A
-  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-shift$$'}
+  - R
+  - S
+  - T
   - D
   - $$mdi:arrow-left-bold$$
   - H
-  - {t: N, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - N
+  - E
+  - I
   - O
   - {t: '''', s: '"'}
   - {t: KP LPAR, h: '$$mdi:apple-keyboard-shift$$'}
@@ -127,8 +127,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - RGUI
   - layer2
-  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:backspace$$', type: backspace}
   layer1:
   - {t: '`', s: '~'}
@@ -257,7 +257,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   layer3:
