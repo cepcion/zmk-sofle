@@ -677,6 +677,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
+<g class="combo combopos-7">
+<path d="M215,98 l-112,12" class="combo"/>
+<path d="M215,98 l75,-6" class="combo"/>
+<rect rx="6" ry="6" x="201" y="85" width="28" height="26" class="combo"/>
+<a href="#layer3">
+<text x="215" y="98" class="combo tap layer-activator">layer3</text>
+</a><text x="215" y="109" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-COLEMAK">
@@ -1065,6 +1073,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-6">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-7">
+<path d="M215,98 l-112,12" class="combo"/>
+<path d="M215,98 l75,-6" class="combo"/>
+<rect rx="6" ry="6" x="201" y="85" width="28" height="26" class="combo"/>
+<a href="#layer3">
+<text x="215" y="98" class="combo tap layer-activator">layer3</text>
+</a><text x="215" y="109" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1459,6 +1475,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
+<g class="combo combopos-7">
+<path d="M215,98 l-112,12" class="combo"/>
+<path d="M215,98 l75,-6" class="combo"/>
+<rect rx="6" ry="6" x="201" y="85" width="28" height="26" class="combo"/>
+<a href="#layer3">
+<text x="215" y="98" class="combo tap layer-activator">layer3</text>
+</a><text x="215" y="109" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1165)" class="layer-layer2">
@@ -1830,6 +1854,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-6">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-7">
+<path d="M215,98 l-112,12" class="combo"/>
+<path d="M215,98 l75,-6" class="combo"/>
+<rect rx="6" ry="6" x="201" y="85" width="28" height="26" class="combo"/>
+<a href="#layer3">
+<text x="215" y="98" class="combo tap layer-activator">layer3</text>
+</a><text x="215" y="109" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2222,6 +2254,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
 </g>
+<g class="combo combopos-7">
+<path d="M215,98 l-112,12" class="combo"/>
+<path d="M215,98 l75,-6" class="combo"/>
+<rect rx="6" ry="6" x="201" y="85" width="28" height="26" class="combo"/>
+<a href="#layer3">
+<text x="215" y="98" class="combo tap layer-activator">layer3</text>
+</a><text x="215" y="109" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1941)" class="layer-layer4">
@@ -2579,6 +2619,14 @@ rect.held, rect.combo.held {
 <g class="combo backspace combopos-6">
 <rect rx="6" ry="6" x="686" y="74" width="28" height="26" class="combo backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="691" y="78" height="18" width="18.0" class="combo backspace tap glyph mdi:backspace"/>
+</g>
+<g class="combo combopos-7">
+<path d="M215,98 l-112,12" class="combo"/>
+<path d="M215,98 l75,-6" class="combo"/>
+<rect rx="6" ry="6" x="201" y="85" width="28" height="26" class="combo"/>
+<a href="#layer3">
+<text x="215" y="98" class="combo tap layer-activator">layer3</text>
+</a><text x="215" y="109" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

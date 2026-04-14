@@ -405,3 +405,5 @@ combos:
   k: $$mdi:backspace-reverse-outline$$
 - p: [21, 22]
   k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [14, 17, 18]
+  k: {t: layer3, h: toggle}
