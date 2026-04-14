@@ -273,7 +273,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - KP DIVIDE
   - KP MULTIPLY
-  - {t: '$$mdi:transfer$$', type: trans}
+  - LNLCK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F7
