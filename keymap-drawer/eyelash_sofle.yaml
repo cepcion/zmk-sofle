@@ -329,7 +329,7 @@ layers:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - 3 sdqrt
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - $$mdi:arrow-up-bold$$
@@ -381,7 +381,7 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
   - {t: COLEMAK, h: toggle}
-  - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-option$$
   - layer1
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
