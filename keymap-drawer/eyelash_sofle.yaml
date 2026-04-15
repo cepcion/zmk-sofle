@@ -57,7 +57,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: COLEMAK, h: toggle}
   - $$mdi:keyboard-tab$$
-  - layer1
+  - actions
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
@@ -113,7 +113,7 @@ layers:
   - V
   - $$mdi:arrow-right-bold$$
   - K
-  - M
+  - H
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -122,7 +122,7 @@ layers:
   - LGUI
   - {t: COLEMAK, h: toggle}
   - $$mdi:apple-keyboard-option$$
-  - layer1
+  - actions
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
@@ -130,7 +130,7 @@ layers:
   - RGUI
   - layer2
   - {t: '$$mdi:backspace$$', type: backspace}
-  layer1:
+  actions:
   - {t: '`', s: '~'}
   - F1
   - F2
@@ -382,7 +382,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - {t: COLEMAK, h: toggle}
   - $$mdi:apple-keyboard-option$$
-  - layer1
+  - actions
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
