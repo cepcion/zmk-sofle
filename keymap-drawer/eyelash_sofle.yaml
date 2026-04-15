@@ -80,11 +80,11 @@ layers:
   - {t: '0', s: )}
   - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
-  - {t: Q, h: LGUI}
+  - Q
   - W
   - F
   - P
-  - G
+  - B
   - $$mdi:arrow-down-bold$$
   - J
   - L
@@ -97,29 +97,29 @@ layers:
   - R
   - S
   - T
-  - D
+  - G
   - $$mdi:arrow-left-bold$$
-  - H
+  - M
   - N
   - E
   - I
   - O
   - {t: '''', s: '"'}
-  - {t: KP LPAR, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: (, h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
   - C
+  - D
   - V
-  - B
   - $$mdi:arrow-right-bold$$
   - K
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: KP RPAR, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
+  - LGUI
   - {t: COLEMAK, h: toggle}
   - $$mdi:apple-keyboard-option$$
   - layer1
@@ -156,7 +156,7 @@ layers:
   - {t: ']', s: '}'}
   - '{'
   - '}'
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - RGB BRI
