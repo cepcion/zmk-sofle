@@ -153,11 +153,11 @@
 
         colemak {
             bindings = <
-&gresc     &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp MINUS
-&kp TAB     &mt LGUI Q &kp W   &kp F     &kp P   &kp G        &kp DOWN_ARROW   &kp J      &kp L      &kp U      &kp Y             &kp SEMI       &kp BSLH
-&mt LCTRL BSLH    &kp A      &kp R   &kp S     &kp  T    &kp D        &kp LEFT_ARROW   &kp H      &kp  N      &kp  E     &kp  I            &kp O    &kp APOS
-&mt LSHIFT KP_LPAR   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp K      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &mt RSHIFT KP_RPAR
-&kp C_MUTE  &kp LCTRL  &tog COLEMAK  &kp LEFT_ALT  &mo ACTION   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER      &kp RGUI &mo BT   &kp BACKSPACE
+&gresc          &kp N1      &kp N2       &kp N3         &kp N4      &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8      &kp N9  &kp N0      &kp MINUS
+&kp TAB         &kp Q       &kp W        &kp F          &kp P       &kp B        &kp DOWN_ARROW   &kp J      &kp L      &kp U       &kp Y   &kp SEMI    &kp BSLH
+&mt LCTRL BSLH  &kp A       &kp R        &kp S          &kp T       &kp G        &kp LEFT_ARROW   &kp M      &kp N      &kp E       &kp  I  &kp O       &kp APOS
+&mt LSHIFT LPAR &kp Z       &kp X        &kp C          &kp D       &kp V        &kp RIGHT_ARROW  &kp K      &kp M      &kp COMMA   &kp DOT &kp FSLH    &mt RSHIFT RPAR
+&kp C_MUTE      &kp LGUI    &tog COLEMAK &kp LEFT_ALT   &mo ACTION  &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &kp RGUI    &mo BT  &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -166,11 +166,11 @@
 
         layer_actions {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp EQUAL        &kp LEFT_BRACKET          &kp RIGHT_BRACKET      &kp LEFT_BRACE   &kp RIGHT_BRACE         &kp EQUAL
-&trans      &kp TILDE        &rgb_ug RGB_BRI   &rgb_ug RGB_BRD          &trans           &mkp MB5   &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp UP     &kp DOWN  &kp RIGHT  &trans
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp HOME  &kp PG_UP  &kp PG_DN    &kp END           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp GRAVE   &kp F1           &kp F2             &kp F3          &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7            &kp F8              &kp F9          &kp F10         &trans
+&trans      &kp GRAVE        &mkp LCLK          &mkp MCLK       &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp LEFT_BRACE  &kp RIGHT_BRACE &trans
+&trans      &kp TILDE        &rgb_ug RGB_BRI    &rgb_ug RGB_BRD &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT          &kp UP              &kp DOWN        &kp RIGHT       &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp HOME          &kp PG_UP           &kp PG_DN       &kp END         &trans
+&kp C_MUTE  &trans           &trans             &trans          &trans           &trans             &mkp LCLK        &trans           &trans            &trans              &trans          &trans
             >;
 
             display-name = "layer1";
