@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - layer3
+  - FUNC
   - layer2
   - {t: '$$mdi:backspace$$', type: backspace}
   COLEMAK:
@@ -260,7 +260,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  layer3:
+  FUNC:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F10
@@ -281,7 +281,7 @@ layers:
   - F9
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP LPAR
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 7
   - KP 8
   - KP 9
@@ -292,9 +292,9 @@ layers:
   - F4
   - F5
   - F6
-  - {t: layer3, h: toggle}
+  - {t: FUNC, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP RPAR
+  - {t: '$$mdi:transfer$$', type: trans}
   - KP 4
   - KP 5
   - KP 6
@@ -387,7 +387,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - layer3
+  - FUNC
   - layer2
   - {t: '$$mdi:backspace$$', type: backspace}
 combos:
