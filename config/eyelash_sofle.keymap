@@ -154,7 +154,7 @@
 &kp TAB                     &hm_l LGUI Q    &kp W           &kp E           &kp R                   &kp T        &kp DOWN_ARROW   &kp Y      &kp U                  &kp I           &kp O           &hm_r RGUI P    &kp BSLH
 &mt LCTRL BSLH              &kp A           &hm_l LALT S    &hm_l LCTRL D   &hm_shift_l LSHIFT F    &kp G        &kp LEFT_ARROW   &kp H      &hm_shift_r RSHIFT J   &hm_r RCTRL K   &hm_r RALT L    &kp SEMI        &kp APOS
 &mt LSHIFT LPAR             &kp Z           &kp X           &kp C           &kp V                   &kp B        &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA       &kp DOT         &kp FSLH        &mt RSHIFT RPAR
-&kp C_MUTE                  &kp ESCAPE      &tog COLEMAK    &kp TAB         &mo ACTION              &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER              MO_TOG(FUNC)        &mo BT          &kp BACKSPACE
+&kp C_MUTE                  &kp ESCAPE      &tog COLEMAK    &kp TAB         &mo ACTION              &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER              &mo FUNC        &mo BT          &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -165,9 +165,9 @@
             bindings = <
 &gresc          &kp N1      &kp N2       &kp N3         &kp N4      &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8      &kp N9  &kp N0      &kp MINUS
 &kp TAB         &kp Q       &kp W        &kp F          &kp P       &kp B        &kp DOWN_ARROW   &kp J      &kp L      &kp U       &kp Y   &kp SEMI    &kp BSLH
-&mt LCTRL BSLH  &kp A       &kp R        &kp S          &kp T       &kp G        &kp LEFT_ARROW   &kp M      &kp N      &kp E       &kp I  &kp O       &kp APOS
+&mt LCTRL BSLH  &kp A       &kp R        &kp S          &kp T       &kp G        &kp LEFT_ARROW   &kp M      &kp N      &kp E       &kp I   &kp O       &kp APOS
 &mt LSHIFT LPAR &kp Z       &kp X        &kp C          &kp D       &kp V        &kp RIGHT_ARROW  &kp K      &kp H      &kp COMMA   &kp DOT &kp FSLH    &mt RSHIFT RPAR
-&kp C_MUTE      &kp LGUI    &tog COLEMAK &kp LEFT_ALT   &mo ACTION  &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &kp RGUI    &mo BT  &kp BACKSPACE
+&kp C_MUTE      &kp LGUI    &tog COLEMAK &kp LEFT_ALT   &mo ACTION  &kp SPACE    &kp ENTER        &trans  &trans        &trans      &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -189,8 +189,8 @@
 
         layer_bt {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
+&trans     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
+&trans     &trans        &trans          &trans        &bt BT_CLR    &bt BT_CLR_ALL  &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
 &trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
@@ -204,8 +204,8 @@
             bindings = <
 &trans  &trans  &kp F10 &kp F11 &kp F12 &trans    &trans     &trans      &trans      &trans      &kp KP_DIVIDE &kp KP_MULTIPLY &kp KP_NUM
 &trans  &trans  &kp F7  &kp F8  &kp F9  &trans    &trans     &kp KP_LPAR &kp KP_N7   &kp KP_N8   &kp KP_N9     &kp KP_MINUS    &trans
-&trans  &trans  &kp F4  &kp F5  &kp F6  &trans    &trans     &kp KP_RPAR &kp KP_N4   &kp KP_N5   &kp KP_N6     &kp KP_PLUS     &trans
-&trans  &trans  &kp F1  &kp F2  &kp F3  &trans    &trans     &kp KP_DOT  &kp KP_N1   &kp KP_N2   &kp KP_N3     &kp ENTER  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &to FUNC  &trans     &kp KP_RPAR &kp KP_N4   &kp KP_N5   &kp KP_N6     &kp KP_PLUS     &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &trans    &trans     &kp KP_DOT  &kp KP_N1   &kp KP_N2   &kp KP_N3     &kp ENTER       &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp KP_N0   &trans      &trans      &trans        &trans
             >;
 
@@ -213,7 +213,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_4 {
+        factorio {
             bindings = <
 &kp GRAVE   &kp N1      &kp N2          &kp N3      &kp N4      &kp N5      &kp UP_ARROW     &kp N6     &kp N7     &kp N8      &kp N9  &kp N0          &kp MINUS
 &kp TAB     &kp Q       &kp W           &kp E       &kp R       &kp T       &kp DOWN_ARROW   &kp Y      &kp U      &kp I       &kp O   &hm_r RGUI P    &kp BSLH
@@ -222,8 +222,8 @@
 &kp C_MUTE  &kp ESCAPE  &tog COLEMAK    &kp LALT    &mo ACTION  &kp SPACE   &kp ENTER        &kp SPACE  &kp ENTER  &mo FUNC    &mo BT  &kp BACKSPACE
             >;
 
-            display-name = "layer4";
-            sensor-bindings = <&scroll_encoder>;
+            display-name = "factorio";
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
     };
 };
