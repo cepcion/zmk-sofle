@@ -151,10 +151,10 @@
         base {
             bindings = <
 &kp GRAVE           &kp N1          &kp N2          &kp N3          &kp N4                  &kp N5       &kp UP_ARROW     &kp N6     &kp N7                 &kp N8          &kp N9          &kp N0          &lt BT MINUS
-&kp TAB             &hm_l LGUI Q    &kp W           &kp E           &kp R                   &kp T        &kp DOWN_ARROW   &kp Y      &kp U                  &kp I           &kp O           &hm_r RGUI P    &kp EQUAL
+&kp LALT            &hm_l LGUI Q    &kp W           &kp E           &kp R                   &kp T        &kp DOWN_ARROW   &kp Y      &kp U                  &kp I           &kp O           &hm_r RGUI P    &kp EQUAL
 &mt LCTRL BSLH      &kp A           &hm_l LALT S    &hm_l LCTRL D   &hm_shift_l LSHIFT F    &kp G        &kp LEFT_ARROW   &kp H      &hm_shift_r RSHIFT J   &hm_r RCTRL K   &hm_r RALT L    &kp SEMI        &kp APOS
 &mt LSHIFT LPAR     &kp Z           &kp X           &kp C           &kp V                   &kp B        &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA       &kp DOT         &kp FSLH        &mt RSHIFT RPAR
-&kp C_MUTE          &kp ESCAPE      &tog COLEMAK    &mo ACTION      &kp TAB                 &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER              &mo FUNC        &mo BT          &kp BACKSPACE
+&kp C_MUTE          &kp ESCAPE      &kp LGUI        &mo ACTION      &kp TAB                 &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER              &mo FUNC        &kp K_APP       &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -163,11 +163,11 @@
 
         colemak {
             bindings = <
-&gresc              &kp N1          &kp N2       &kp N3         &kp N4      &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8      &kp N9      &kp N0              &trans
-&kp TAB             &hm_l LGUI Q    &kp W        &kp F          &kp P       &kp B        &kp DOWN_ARROW   &kp J      &kp L      &kp U       &kp Y       &hm_r RGUI SEMI     &trans
-&mt LCTRL BSLH      &kp A           &kp R        &kp S          &kp T       &kp G        &kp LEFT_ARROW   &kp M      &kp N      &kp E       &kp I       &kp O               &trans
-&mt LSHIFT LPAR     &kp Z           &kp X        &kp C          &kp D       &kp V        &kp RIGHT_ARROW  &kp K      &kp H      &kp COMMA   &kp DOT     &trans              &trans
-&kp C_MUTE          &kp LGUI        &tog COLEMAK &kp LEFT_ALT   &mo ACTION  &kp SPACE    &kp ENTER        &trans  &trans        &trans      &trans      &trans
+&trans              &trans          &trans       &trans             &trans                  &trans      &trans          &trans      &trans                  &trans      &trans               &trans              &trans
+&trans              &hm_l LGUI Q    &kp W        &kp F              &kp P                   &kp B       &trans          &kp J       &kp L                   &kp U       &kp Y                &hm_r RGUI SEMI     &trans
+&trans              &kp A           &kp R        &kp S              &kp T                   &kp G       &trans          &kp M       &kp N                   &kp E       &kp I                &kp O               &trans
+&trans              &kp Z           &kp X        &kp C              &kp D                   &kp V       &trans          &kp K       &kp H                   &trans      &trans               &trans              &trans
+&trans              &trans          &trans       &trans             &trans                  &trans      &trans          &trans      &trans                  &trans      &trans               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -178,8 +178,8 @@
             bindings = <
 &kp GRAVE   &kp F1           &kp F2             &kp F3          &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7            &kp F8              &kp F9          &kp F10         &kp F11
 &trans      &kp GRAVE        &mkp LCLK          &mkp MCLK       &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp EQUAL        &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &kp LEFT_BRACE  &kp RIGHT_BRACE &kp F12
-&trans      &kp TILDE        &rgb_ug RGB_BRI    &rgb_ug RGB_BRD &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT          &kp UP              &kp DOWN        &kp RIGHT       &trans
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &kp HOME          &kp PG_UP           &kp PG_DN       &kp END         &trans
+&trans      &kp TILDE        &rgb_ug RGB_BRI    &rgb_ug RGB_BRD &trans           &mkp MB5           &mmv MOVE_LEFT   &trans           &kp LEFT          &kp UP              &kp DOWN        &kp RIGHT       &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON     &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &trans           &kp HOME          &kp PG_UP           &kp PG_DN       &kp END         &trans
 &kp C_MUTE  &trans           &trans             &trans          &trans           &trans             &mkp LCLK        &trans           &trans            &trans              &trans          &trans
             >;
 
@@ -189,11 +189,11 @@
 
         layer_bt {
             bindings = <
-&trans     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &trans  &trans  &trans      &trans     &trans         &trans
-&trans     &trans        &trans          &trans        &bt BT_CLR    &bt BT_CLR_ALL  &mmv MOVE_DOWN   &trans  &trans  &trans      &trans     &kp UNDER      &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC       &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader    &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&trans     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &tog COLEMAK      &trans  &trans      &trans     &trans         &trans
+&trans     &trans        &trans          &trans        &bt BT_CLR    &bt BT_CLR_ALL  &mmv MOVE_DOWN   &trans            &trans  &trans      &trans     &kp UNDER      &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans            &trans  &trans      &trans     &kp LBRC       &kp RBRC
+&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans            &trans  &sys_reset  &soft_off  &bootloader    &trans
+&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans            &trans  &trans      &trans     &trans
             >;
 
             display-name = "layer2";
