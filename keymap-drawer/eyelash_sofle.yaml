@@ -55,7 +55,7 @@ layers:
   - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
-  - LGUI
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - actions
   - $$mdi:keyboard-tab$$
   - $$mdi:keyboard-space$$
@@ -63,8 +63,8 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - FUNC
-  - APP
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Ctl+$$mdi:backspace$$', type: backspace}
   COLEMAK:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -164,7 +164,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:alpha-w-box$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
@@ -207,7 +207,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: FUNC, h: toggle}
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -268,9 +268,9 @@ layers:
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - ^
+  - (
+  - )
   - KP DIVIDE
   - KP MULTIPLY
   - KP NUM
@@ -281,7 +281,7 @@ layers:
   - F9
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $
   - KP 7
   - KP 8
   - KP 9
@@ -292,9 +292,9 @@ layers:
   - F4
   - F5
   - F6
-  - {t: FUNC, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '%'
   - KP 4
   - KP 5
   - KP 6
