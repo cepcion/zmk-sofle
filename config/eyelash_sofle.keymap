@@ -110,7 +110,7 @@
         cmb_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <27 30>;
-        }
+        };
 
         cmb_factorio {
             bindings = <&tog FACTORIO>;
