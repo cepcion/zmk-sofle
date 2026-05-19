@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', h: layer2, s: _}
-  - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-tab$$
   - {t: Q, h: LGUI}
   - W
   - E
@@ -55,7 +55,7 @@ layers:
   - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
   - actions
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: 'Gui+Ctl+Alt+$$mdi:apple-keyboard-shift$$'}
