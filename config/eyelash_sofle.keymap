@@ -142,7 +142,7 @@
         };
 
         cmb_cbkspac {
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <20 21>;
         };
 
