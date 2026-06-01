@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
+  - '&td1'
   - $$mdi:volume-off$$
   - $$mdi:keyboard-esc$$
   - $$mdi:apple-keyboard-option$$
@@ -63,7 +63,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - FUNC
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - APP
   - {t: '$$mdi:backspace$$', type: backspace}
   COLEMAK:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -413,3 +413,7 @@ combos:
   k: $$mdi:pan-up$$
 - p: [47, 48]
   k: $$mdi:pan-down$$
+- p: [20, 21]
+  k: Ctl+Z
+- p: [29, 30]
+  k: $$mdi:keyboard-tab$$
