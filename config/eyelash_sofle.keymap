@@ -74,6 +74,13 @@
             bindings = <&mt LSHIFT LPAR>, <&caps_word>;
         };
 
+        td1: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt RSHIFT RPAR>, <&caps_word>;
+        };        
+
     };
 
     combos {
@@ -133,6 +140,16 @@
             bindings = <&msc SCRL_DOWN>;
             key-positions = <47 48>;
         };
+
+        cmb_cbkspac {
+            bindings = <&kp LC(Z)>;
+            key-positions = <20 21>;
+        };
+
+        cmb_tab {
+           bindings = <&kp TAB>;
+           key-positions = <29 30>;
+        }
     };
 
     macros {
@@ -176,8 +193,8 @@
 &kp GRAVE           &kp N1          &kp N2          &kp N3          &kp N4                  &kp N5                          &kp UP_ARROW     &kp N6     &kp N7                 &kp N8          &kp N9          &kp N0          &lt BT MINUS
 &kp TAB             &hm_l LGUI Q    &kp W           &kp E           &kp R                   &kp T                           &kp DOWN_ARROW   &kp Y      &kp U                  &kp I           &kp O           &hm_r RGUI P    &kp EQUAL
 &mt LCTRL BSLH      &kp A           &hm_l LALT S    &hm_l LCTRL D   &hm_shift_l LSHIFT F    &kp G                           &kp LEFT_ARROW   &kp H      &hm_shift_r RSHIFT J   &hm_r RCTRL K   &hm_r RALT L    &kp SEMI        &kp APOS
-&td0                &kp Z           &kp X           &kp C           &kp V                   &kp B                           &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA       &kp DOT         &kp FSLH        &mt RSHIFT RPAR
-&kp C_MUTE          &kp ESCAPE      &kp LALT        &mo ACTION      &kp TAB                 &mt LG(LC(LA(LSHIFT))) SPACE    &kp ENTER        &kp SPACE  &kp ENTER              &mo FUNC        &none           &kp BACKSPACE
+&td0                &kp Z           &kp X           &kp C           &kp V                   &kp B                           &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA       &kp DOT         &kp FSLH        &td1
+&kp C_MUTE          &kp ESCAPE      &kp LALT        &mo ACTION      &kp TAB                 &mt LG(LC(LA(LSHIFT))) SPACE    &kp ENTER        &kp SPACE  &kp ENTER              &mo FUNC        &kp K_APP       &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
