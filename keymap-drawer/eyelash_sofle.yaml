@@ -414,6 +414,6 @@ combos:
 - p: [47, 48]
   k: $$mdi:pan-down$$
 - p: [20, 21]
-  k: Ctl+Z
+  k: {t: 'Ctl+$$mdi:backspace$$', type: backspace}
 - p: [29, 30]
   k: $$mdi:keyboard-tab$$
