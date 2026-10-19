@@ -17,7 +17,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: Q, h: LGUI}
   - W
-  - E
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - R
   - T
   - $$mdi:arrow-down-bold$$
@@ -30,7 +30,7 @@ layers:
   - {t: \, h: '$$mdi:apple-keyboard-control$$', s: '|'}
   - A
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - D
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - $$mdi:arrow-left-bold$$
