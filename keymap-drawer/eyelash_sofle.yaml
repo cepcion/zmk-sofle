@@ -17,7 +17,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {t: Q, h: LGUI}
   - W
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-control$$'}
   - R
   - T
   - $$mdi:arrow-down-bold$$
