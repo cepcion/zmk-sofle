@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
-  - {t: '$$mdi:apple-keyboard-option$$', h: mods_l}
+  - mods_l
   - actions
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: APP, h: mods_r}
+  - mods_r
   - FUNC
   - {t: '$$mdi:backspace$$', type: backspace}
   actions:
