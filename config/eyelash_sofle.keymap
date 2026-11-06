@@ -3,6 +3,7 @@
 #define BT 2
 #define FUNC 3
 #define FACTORIO 4
+#define MODS 5
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
@@ -64,6 +65,16 @@
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&tog>;
+        };
+
+        // Callum-style sticky (one-shot) mod: tap it, it stays active until the next key is pressed
+        skq: sticky_key_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <2000>;
+            quick-release;
+            ignore-modifiers;   // lets you chain several sticky mods (rolling)
         };
 
         td0: tap_dance_0 {
@@ -189,11 +200,11 @@
 // └─────────┴───┴───┴───┴───┴───┴────────┴───┴───┴───┴───┴───┴───────────┘
         base {
             bindings = <
-&kp GRAVE           &kp N1          &kp N2          &kp N3          &kp N4                  &kp N5                          &kp UP_ARROW     &kp N6     &kp N7                 &kp N8          &kp N9          &kp N0          &lt BT MINUS
-&kp TAB             &hm_l LGUI Q    &kp W           &hm_l LCTRL E   &kp R                   &kp T                           &kp DOWN_ARROW   &kp Y      &kp U                  &kp I           &kp O           &hm_r RGUI P    &kp EQUAL
-&mt LCTRL BSLH      &kp A           &hm_l LALT S    &kp D           &hm_shift_l LSHIFT F	&kp G							&kp LEFT_ARROW   &kp H      &hm_shift_r RSHIFT J   &hm_r RCTRL K   &hm_r RALT L    &kp SEMI        &kp APOS
-&td0                &kp Z           &kp X           &kp C           &kp V                   &kp B                           &kp RIGHT_ARROW  &kp N      &kp M                  &kp COMMA       &kp DOT         &kp FSLH        &td1
-&kp C_MUTE			&kp LCTRL       &kp LGUI        &kp LALT        &mo ACTION              &kp SPACE    				    &kp ENTER        &kp SPACE  &kp ENTER              &mo FUNC        &kp K_APP       &kp BACKSPACE
+&kp GRAVE           &kp N1          &kp N2          &kp N3          &kp KP_N4   &kp N5      &kp UP_ARROW     &kp N6     &kp N7      &kp N8          &kp N9          &kp N0          &lt BT MINUS
+&kp TAB             &kp Q           &kp W           &kp E           &kp R       &kp T       &kp DOWN_ARROW   &kp Y      &kp U       &kp I           &kp O           &kp P           &kp EQUAL
+&mt LCTRL BSLH      &kp A           &kp S           &kp D           &kp         &kp G       &kp LEFT_ARROW   &kp H      &kp J       &kp K           &kp L           &kp SEMI        &kp APOS
+&td0                &kp Z           &kp X           &kp C           &kp V       &kp B       &kp RIGHT_ARROW  &kp N      &kp M       &kp COMMA       &kp DOT         &kp FSLH        &td1
+&kp C_MUTE			&kp LCTRL       &kp LGUI        &lt MODS LALT   &mo ACTION  &kp SPACE   &kp ENTER        &kp SPACE  &kp ENTER   &mo FUNC        &lt MODS K_APP  &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -250,6 +261,20 @@
 
             display-name = "factorio";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        // Sticky mods layer: hold the right-thumb key (tap = K_APP), tap mods, release, then type.
+        // Home row, both hands, pinky -> index: GUI ALT CTRL SHIFT
+        layer_mods {
+            bindings = <
+&trans  &trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans       &trans       &trans      &trans      &trans
+&trans  &trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans       &trans       &trans      &trans      &trans
+&trans  &skq LGUI  &skq LALT  &skq LCTRL  &skq LSHIFT  &trans  &trans    &trans  &skq LSHIFT  &skq LCTRL   &skq LALT   &skq LGUI   &trans
+&trans  &trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans       &trans       &trans      &trans      &trans
+&trans  &trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans       &trans       &trans      &trans
+            >;
+
+            display-name = "mods";
         };
     };
 };
